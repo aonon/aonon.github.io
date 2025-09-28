@@ -1,0 +1,79 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* 防止滚动条出现 */
+    font-family: 'Mongolian Baiti', serif; /* 示例字体，请根据实际情况选择 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* 主容器垂直布局 */
+    height: 100%;
+    box-sizing: border-box; /* 确保padding和border不增加总高度 */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* 标题和菜单左右对齐 */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    writing-mode: vertical-rl; /* 竖着排版，从右到左 */
+    text-orientation: upright; /* 字符垂直排列 */
+    height: 100%; /* 占据整个垂直空间 */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em; /* 调整标题大小 */
+    white-space: nowrap; /* 防止标题换行 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* 菜单项也竖着排版 */
+    height: 100%; /* 菜单占据整个垂直空间 */
+    justify-content: space-around; /* 菜单项均匀分布 */
+}
+
+nav li {
+    margin-bottom: 10px; /* 调整菜单项间距 */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block; /* 确保链接占据整个区域 */
+    padding: 5px;
+    writing-mode: vertical-rl; /* 菜单项竖着排版 */
+    text-orientation: upright;
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+}
+
+main {
+    flex-grow: 1; /* 主内容区域占据剩余空间 */
+    padding: 20px;
+    overflow-y: auto; /* 如果内容超出浏览器高度，允许滚动 */
+    writing-mode: vertical-rl; /* 主内容区域竖着排版 */
+    text-orientation: upright;
+    direction: ltr; /* 行从左到右，但文字是竖的 */
+    unicode-bidi: embed; /* 确保方向设置生效 */
+    display: flex; /* 让内容块可以横向排列 */
+    flex-wrap: wrap; /* 如果内容过多，允许换行 */
+    align-items: flex-start; /* 从顶部开始对齐 */
+    justify-content: flex-start; /* 从左侧开始对齐 */
+}
+
+.page-content {
+    /* 为加载进来的内容块设置样式 */
+    margin-right: 20px; /* 每个内容块之间留出间距 */
+    white-space: nowrap; /* 防止内容块内的文本自动换行，保持竖排 */
+}
