@@ -1,8 +1,31 @@
+@font-face {
+  font-family: "Urga";
+  src: url("fonts\Urga.woff2") format("woff2"),
+       url("fonts\Urga.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Chagan";
+  src: url("fonts\Chagan.woff2") format("woff2"),
+       url("fonts\Chagan.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bichimel";
+  src: url("fonts\Bichimel.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Garchag";
+  src: url("fonts\Garchag.woff2") format("woff2"),
+       url("fonts\Garchag.woff") format("woff");
+}
+
 html, body {
     height: 100%;
     margin: 0;
     overflow: hidden; /* 防止滚动条出现 */
-    font-family: 'Mongolian Baiti', serif; /* 示例字体，请根据实际情况选择 */
+    font-family: Urga, Chagan; /* 示例字体，请根据实际情况选择 */
     writing-mode: vertical-lr; /* 整体竖排，从左到右 */
     text-orientation: mixed; /* 字符垂直排列 */
 }
@@ -23,6 +46,7 @@ header {
     border-right: 1px solid #ccc;
     writing-mode: vertical-lr; /* 竖着排版，从右到左 */
     height: 100%; /* 占据整个垂直空间 */
+    font-family: Garchag, Bichimel; /* 示例字体，请根据实际情况选择 */
 }
 
 h1 {
@@ -40,6 +64,7 @@ nav ul {
     flex-direction: row; /* 菜单项也竖着排版 */
     height: 100%; /* 菜单占据整个垂直空间 */
     justify-content: space-around; /* 菜单项均匀分布 */
+    font-family: Chagan;
 }
 
 nav li {
