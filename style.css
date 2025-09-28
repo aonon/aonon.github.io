@@ -3,6 +3,8 @@ html, body {
     margin: 0;
     overflow: hidden; /* 防止滚动条出现 */
     font-family: 'Mongolian Baiti', serif; /* 示例字体，请根据实际情况选择 */
+    writing-mode: vertical-lr; /* 整体竖排，从左到右 */
+    text-orientation: mixed; /* 字符垂直排列 */
 }
 
 .container {
@@ -13,14 +15,13 @@ html, body {
 }
 
 header {
-    display: flex;
+    display: contents;
     justify-content: space-between; /* 标题和菜单左右对齐 */
     align-items: center;
     padding: 10px 20px;
     background-color: #f0f0f0;
-    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
     writing-mode: vertical-rl; /* 竖着排版，从右到左 */
-    text-orientation: upright; /* 字符垂直排列 */
     height: 100%; /* 占据整个垂直空间 */
 }
 
@@ -35,13 +36,14 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* 菜单项也竖着排版 */
+    flex-direction: row; /* 菜单项也竖着排版 */
     height: 100%; /* 菜单占据整个垂直空间 */
     justify-content: space-around; /* 菜单项均匀分布 */
 }
 
 nav li {
     margin-bottom: 10px; /* 调整菜单项间距 */
+    text-orientation: mixed
 }
 
 nav a {
@@ -51,7 +53,7 @@ nav a {
     display: block; /* 确保链接占据整个区域 */
     padding: 5px;
     writing-mode: vertical-rl; /* 菜单项竖着排版 */
-    text-orientation: upright;
+    text-orientation: mixed;
 }
 
 nav a:hover {
@@ -63,7 +65,7 @@ main {
     padding: 20px;
     overflow-y: auto; /* 如果内容超出浏览器高度，允许滚动 */
     writing-mode: vertical-rl; /* 主内容区域竖着排版 */
-    text-orientation: upright;
+    text-orientation: mixed;
     direction: ltr; /* 行从左到右，但文字是竖的 */
     unicode-bidi: embed; /* 确保方向设置生效 */
     display: flex; /* 让内容块可以横向排列 */
