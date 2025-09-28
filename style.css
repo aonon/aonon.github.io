@@ -77,5 +77,7 @@ main {
 .page-content {
     /* 为加载进来的内容块设置样式 */
     margin-right: 20px; /* 每个内容块之间留出间距 */
-    white-space: nowrap; /* 防止内容块内的文本自动换行，保持竖排 */
+}
+.page-content:last-child {
+    margin-right: 0; /* 最后一个内容块不需要右边距 */
 }
