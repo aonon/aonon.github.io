@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Urga";
-  src: url("fonts\Urga.woff2") format("woff2"),
-       url("fonts\Urga.woff") format("woff");
+  src: url("fonts/Urga.woff2") format("woff2"),
+       url("fonts/Urga.woff") format("woff");
 }
 
 @font-face {
   font-family: "Chagan";
-  src: url("fonts\Chagan.woff2") format("woff2"),
-       url("fonts\Chagan.woff") format("woff");
+  src: url("fonts/Chagan.woff2") format("woff2"),
+       url("fonts/Chagan.woff") format("woff");
 }
 
 @font-face {
   font-family: "Bichimel";
-  src: url("fonts\Bichimel.woff2") format("woff2");
+  src: url("fonts/Bichimel.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Garchag";
-  src: url("fonts\Garchag.woff2") format("woff2"),
-       url("fonts\Garchag.woff") format("woff");
+  src: url("fonts/Garchag.woff2") format("woff2"),
+       url("fonts/Garchag.woff") format("woff");
 }
 
 html, body {
