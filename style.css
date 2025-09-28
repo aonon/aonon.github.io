@@ -29,6 +29,7 @@ h1 {
     margin: 0;
     font-size: 2em; /* 调整标题大小 */
     white-space: nowrap; /* 防止标题换行 */
+    padding: 20px 5px;
 }
 
 nav ul {
