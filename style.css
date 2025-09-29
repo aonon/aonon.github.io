@@ -24,7 +24,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* 防止滚动条出现 */
+    /* overflow: hidden; 防止滚动条出现 */
     font-family: Urga, Chagan; /* 示例字体，请根据实际情况选择 */
     writing-mode: vertical-lr; /* 整体竖排，从左到右 */
     text-orientation: mixed; /* 字符垂直排列 */
