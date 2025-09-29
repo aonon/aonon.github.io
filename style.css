@@ -107,8 +107,3 @@ main {
 .page-content:last-child {
     margin-right: 0; /* 最后一个内容块不需要右边距 */
 }
-
-#content-area {
-    font-size: 1.5em;
-    font-family: Urga; 
-}
