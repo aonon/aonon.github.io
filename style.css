@@ -38,7 +38,7 @@ html, body {
 }
 
 header {
-    display: contents;
+    display: flex;
     justify-content: space-between; /* 标题和菜单左右对齐 */
     align-items: center;
     padding: 10px 20px;
