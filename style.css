@@ -107,3 +107,18 @@ main {
 .page-content:last-child {
     margin-right: 0; /* 最后一个内容块不需要右边距 */
 }
+
+#content-area {
+    font-size: medium;
+    flex-grow: 1; /* 主内容区域占据剩余空间 */
+    padding: 20px;
+    overflow-y: auto; /* 如果内容超出浏览器高度，允许滚动 */
+    writing-mode: vertical-lr; /* 主内容区域竖着排版 */
+    text-orientation: mixed;
+    direction: ltr; /* 行从左到右，但文字是竖的 */
+    unicode-bidi: embed; /* 确保方向设置生效 */
+    display: flex; /* 让内容块可以横向排列 */
+    flex-wrap: wrap; /* 如果内容过多，允许换行 */
+    align-items: flex-start; /* 从顶部开始对齐 */
+    justify-content: flex-start; /* 从左侧开始对齐 */
+}
