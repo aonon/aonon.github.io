@@ -110,12 +110,5 @@ main {
 
 #content-area {
     font-size: 1.5em;
-    flex-grow: 1; /* 主内容区域占据剩余空间 */
-    padding: 20px;
-    direction: ltr; /* 行从左到右，但文字是竖的 */
-    unicode-bidi: embed; /* 确保方向设置生效 */
-    display: flex; /* 让内容块可以横向排列 */
-    flex-wrap: wrap; /* 如果内容过多，允许换行 */
-    align-items: flex-start; /* 从顶部开始对齐 */
-    justify-content: flex-start; /* 从左侧开始对齐 */
+    font-family: Urga; 
 }
