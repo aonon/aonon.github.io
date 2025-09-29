@@ -46,7 +46,7 @@ header {
     border-right: 1px solid #ccc;
     writing-mode: vertical-lr; /* 竖着排版，从右到左 */
     height: 100%; /* 占据整个垂直空间 */
-    font-family: Garchag, Bichimel; /* 示例字体，请根据实际情况选择 */
+    font-family: Bichimel; /* 示例字体，请根据实际情况选择 */
 }
 
 h1 {
