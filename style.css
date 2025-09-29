@@ -24,7 +24,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    /* overflow: hidden; 防止滚动条出现 */
+    overflow-y: auto;
     font-family: Urga, Chagan; /* 示例字体，请根据实际情况选择 */
     writing-mode: vertical-lr; /* 整体竖排，从左到右 */
     text-orientation: mixed; /* 字符垂直排列 */
@@ -109,12 +109,9 @@ main {
 }
 
 #content-area {
-    font-size: medium;
+    font-size: 1.5em;
     flex-grow: 1; /* 主内容区域占据剩余空间 */
     padding: 20px;
-    overflow-y: auto; /* 如果内容超出浏览器高度，允许滚动 */
-    writing-mode: vertical-lr; /* 主内容区域竖着排版 */
-    text-orientation: mixed;
     direction: ltr; /* 行从左到右，但文字是竖的 */
     unicode-bidi: embed; /* 确保方向设置生效 */
     display: flex; /* 让内容块可以横向排列 */
