@@ -1,3 +1,2 @@
 # Monogol Bichig
-ᠲᠤᠷᠰᠢᠵᠤ ᠪᠠᠢᠨ᠎ᠠ
-mongol-bichig top
+mongol-bichig.top
